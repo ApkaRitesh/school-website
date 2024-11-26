@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT. GURU PARASAD GAYAPARASAD INTER COLLEGE</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: #333;
+      background-color: #f0f3fa;
+    }
+
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+
+    header .container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #d54747;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 style="font-size: 42px; color: #d54747;">PT. GURU PARASAD GAYAPARASAD INTER COLLEGE</h1>
+      <nav>
+        <a href="home.html" class="tab">Home</a>
+        <a href="aboutus.html" class="tab">About Us</a>
+        <a href="home.html" class="tab">Events</a>
+        <a href="home.html" class="tab">Gallery</a>
+        <a href="home.html" class="tab">Notice Board</a>
+        <a href="home.html" class="tab">Blogs</a>
+        <a href="contact.html" class="tab">Contact Us</a>
+        <a href="map.html" class="tab">Show Location</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Our College Location</h2>
+    <div id="map"></div>
+  </div>
+
+  <script>
+    // Initialize the map with the school location
+    function initMap() {
+      const schoolLocation = {
+        lat: 40.7128, // Replace with the actual latitude of your school
+        lng: -74.0060, // Replace with the actual longitude of your school
+      };
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: schoolLocation,
+        zoom: 15,
+      });
+
+      new google.maps.Marker({
+        position: schoolLocation,
+        map: map,
+        title: "PT. GURU PARASAD GAYAPARASAD INTER COLLEGE",
+      });
+    }
+  </script>
+
+  <!-- Add Google Maps API Script -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <div class="footer-sect">
+    <a href="home.html" style="color: #46b7c1;">Home</a>
+    <a href="aboutus.html" style="color: #46b7c1;">About us</a>
+    <a href="home.html" style="color: #46b7c1;">Tutorial</a>
+    <a href="home.html" style="color: #46b7c1;">Event</a>
+    <a href="aboutus.html" style="color: #46b7c1;">Gallery</a>
+    <a href="home.html" style="color: #46b7c1;">Press Release</a>
+    <a href="home.html" style="color: #46b7c1;">Courses</a>
+    <a href="contact.html" style="color: #46b7c1;">Contact Us</a>
+  </div>
+  <div class="footer-sect">
+    <a href="https://www.linkedin.com/in/ritesh-kumar41222155" target="_blank">
+      <img src="image/facebook_icon.png" alt="Facebook">
+    </a>
+    <a href="https://www.linkedin.com/in/ritesh-kumar41222155" target="_blank">
+      <img src="image/twitter.png" alt="Twitter">
+    </a>
+    <a href="https://www.linkedin.com/in/ritesh-kumar41222155" target="_blank">
+      <img src="image/linkdin_icon.png" alt="LinkedIn">
+    </a>
+    <a href="https://www.linkedin.com/in/ritesh-kumar41222155" target="_blank">
+      <img src="image/instagaram_icon.png" alt="Instagram">
+    </a>
+    
+  </div>
+</div>
+</footer>
+<div class="blank" style="background-color: black;"><h1></h1>new</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
